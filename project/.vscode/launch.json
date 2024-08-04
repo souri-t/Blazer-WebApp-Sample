@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Server",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/OwnWebApiServer/OwnWebApiServer.csproj"
+        },
+        {
+            "name": "Client",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/OwnBlazorApp/OwnBlazorApp.csproj"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Server And Client",
+            "configurations": ["Server", "Client"]
+        }
+    ]
+}
